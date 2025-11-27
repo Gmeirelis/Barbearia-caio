@@ -1,0 +1,20 @@
+ background-image: url("img/backgroud.jpg");
+    background-size: contain;  
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: #000; /* cor de fundo para preencher o resto da tela */
+    min-height: 100vh;
+
+     <div class="container">
+
+                <div class="logo">
+                    <img src="img/logo.png" alt="Logo">
+                </div>
+
+                <div class="texto">
+                    <b>Tradição, técnica e um novo <br>padrão de cuidado</b>
+                </div>
+
+            </div>
+             <h2>Vem cortar na melhor<br>Barbearia</h2>
+              <img id="logo" src="img/logo.png" alt="logo">

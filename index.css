@@ -1,0 +1,523 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+     font-family: "Poppins", sans-serif;
+}
+
+
+
+/* --------- HEADER --------- */
+header{
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 999;
+}
+section{
+    scroll-margin-top: 80px;
+}
+
+header{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-radius: 0px 0px 20px;
+}
+
+header i{
+    font-size: 25px;
+}
+header h1{
+   color: rgb(214, 159, 6);
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-shadow: 0px 1px 3px rgb(0,0,0,0.2);
+    border-bottom: 1px solid rgb(0,0,0,0.1);
+}
+header p{
+    position: relative;
+    left: 5px;
+    font-size: 20px;
+}
+
+
+
+/* --------- MENU MOBILE --------- */
+.menu-mobile{
+    position: fixed;
+    top: 0;
+    right: -260px;   /* começa escondido */
+    width: 260px;
+    height: 100vh;
+    background: #0a0a0a;
+    border-left: 3px solid goldenrod;
+    padding-top: 80px;
+    transition: 0.3s ease;
+    z-index: 999;
+}
+
+.menu-mobile ul{
+    list-style: none;
+    padding: 0 20px;
+}
+
+.menu-mobile li{
+    margin-bottom: 25px;
+}
+
+.menu-mobile a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu-mobile a:hover{
+    color: gold;
+}
+
+.menu-open{
+    right: 0 !important;
+}
+/* BOTÃO X FECHAR */
+.btn-close{
+    background-color: #ffffff00;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 28px;
+    color: rgb(225, 150, 44);
+    cursor: pointer;
+}
+
+.btn-close i:hover{
+    color: rgb(215, 185, 48);
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+
+/* --------- INÍCIO --------- */
+/* INÍCIO (DESKTOP) */
+.inicio{
+    position: relative;
+    width: 100%;
+    padding: 60px 0px 0px 0px;
+}
+
+/* imagem com espaço nas laterais */
+.inicio .background{
+    width: 90%;              /* deixa espaço nas bordas */
+    height: 550px;           /* mais alta */
+    object-fit: cover;
+    border-radius: 25px;
+    display: block;
+    margin: 0 auto;          /* centraliza e cria espaço nas laterais */
+}
+
+/* título */
+.inicio h2{
+    position: absolute;
+    left: 40px;
+    bottom: 60px;
+    font-size: 32px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.texto-inicio{
+   font-weight: 700;
+   opacity: 0;
+   transform: translateY(20px);
+   animation: showUp 1.4s ease-out forwards;
+
+}
+@keyframes showUp{
+
+from{
+    opacity: 0;
+    transform: translateY(25px);
+}
+to{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+}
+
+
+
+/* --------- SOBRE --------- */
+.sobre{
+    background-color: white;
+    padding: 60px 20px;
+}
+
+.sobre h1{
+    color: rgb(214, 159, 6);
+    font-family: "Anton", sans-serif;
+    margin-bottom: 15px;
+    border-bottom: 1px solid;
+    width: fit-content;
+    transform: translateY(20px);
+   animation: showUp 1.4s ease-out forwards;
+}
+
+.sobre p{
+    color: rgb(30, 30, 30);
+    line-height: 1.6;
+    font-size: 18px;
+    transform: translateY(20px);
+   animation: showUp 1.4s ease-out forwards;
+}
+
+/* --------- SERVIÇOS --------- */
+.servicos{
+    background-color: white;
+    padding: 40px 20px 80px;
+    text-align: center;
+    border-radius: 20px 20px 0 0;
+}
+
+.servicos h1{
+    color: rgb(214, 159, 6);
+    border-bottom: 1px solid;
+    width: fit-content;
+    margin: 0 auto 30px;
+    font-family: "Anton", sans-serif;
+    transform: translateY(20px);
+   animation: showUp 1.4s ease-out forwards;
+}
+
+.block{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    transform: translateY(20px);
+   animation: showUp 1.4s ease-out forwards;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+}
+
+.servicos img{
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 1px solid black;
+}
+
+.cortes{
+    padding: 50px 0px 100px;
+
+}
+.cortes h1{
+ 
+    font-size: 30px;
+    color: rgb(214, 159, 6);
+    border-bottom: 1px solid;
+    width: fit-content;
+    margin: 0 auto 30px;
+    font-family: "Anton", sans-serif;
+}
+
+.container-cortes{
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.cortes img{
+    
+    width: 50%;
+    height: 200px;   /* altura ideal */
+    object-fit: cover; /* evita distorcer */
+    border-radius: 10px;
+    margin-bottom: 10px;
+     filter: grayscale(90%);
+}
+
+.card{
+    
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 18px;
+    transition: 0.3s;
+    width: 300px;
+    height: 300px;
+}
+
+
+
+/* barbeiro*/
+
+.barbeiro{
+     padding: 40px 20px 80px;
+     text-align: center;
+
+} 
+.barbeiro h1{ 
+    color: rgb(214, 159, 6);
+    border-bottom: 1px solid;
+    width: fit-content;
+    margin: 0 auto 30px;
+    font-family: "Anton", sans-serif;
+}
+.barbeiro p{
+    color: rgb(30, 30, 30);
+    line-height: 1.6;
+    font-size: 18px;
+
+}
+
+.barbeiro-container img{
+    width: 150px;
+    height: 150px;
+     object-fit: cover;
+     border-radius: 80px;
+     
+    
+}
+.barbeiro-container{
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     gap: 35px;
+     border: 1px solid gold;
+     padding: 20px 0px 50px 0px;
+}
+
+/* --------- CONTATO --------- */
+.contato{
+    padding: 10px 20px 80px;
+    text-align: center;
+}
+
+.contato h1{
+    color: rgb(214, 159, 6);
+    border-bottom: 1px solid;
+    width: fit-content;
+    margin: 0 auto 30px;
+    font-family: "Anton", sans-serif;
+}
+
+.contato-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.contato .info{
+    text-align: left;
+    width: 40%;
+}
+
+.contato .info h2{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.contato .info p{
+    margin-bottom: 20px;
+    font-size: 17px;
+    color: rgb(30, 30, 30);
+}
+
+.contato a{
+    color: green;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contato a:hover{
+    text-decoration: underline;
+}
+
+.mapa{
+    width: 45%;
+}
+
+.info img{
+    width: 300px;
+    height: 300px;
+     object-fit: cover;
+     border-radius: 20px;
+
+}
+/* --------- FOOTER --------- */
+.footer{
+    background: #0a0a0a;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 60px;
+    border-top: 2px solid goldenrod;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.footer h2{
+    font-family: "Anton", sans-serif;
+    font-size: 28px;
+    color: gold;
+    margin-bottom: 15px;
+}
+
+.footer-social{
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.footer-social a{
+    color: gold;
+    font-size: 26px;
+    transition: 0.3s;
+}
+
+.footer-social a:hover{
+    color: white;
+    transform: scale(1.2);
+}
+
+.footer-endereco{
+    margin-top: 10px;
+    font-size: 16px;
+    color: #ccc;
+}
+
+.footer-endereco i{
+    color: gold;
+    margin-right: 5px;
+}
+
+.direitos{
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------- MOBILE --------- */
+@media (max-width: 768px){
+
+    .inicio .background{
+        width: 92%;           /* espaço ainda maior nas bordas */
+        height: 480px;        /* mais alta no celular */
+        border-radius: 25px;
+        margin: 0 auto;
+    }
+
+    .inicio h2{
+        font-size: 24px;
+        bottom: 40px;
+        left: 25px;
+    }
+/* sobre*/
+    .sobre p{
+        font-size: 16px;
+    }
+    /* serviços*/
+
+    .item{
+        width: 48%;
+    }
+
+    .servicos img{
+        width: 75px;
+        height: 75px;
+        
+    }
+
+    /*barbeiro*/
+    .barbeiro-container{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap: 35px;
+     border: 1px solid gold;
+     padding: 20px 0px 50px 0px;
+}
+
+    .barbeiro-container img{
+    width: 150px;
+    height: 150px;
+     object-fit: cover;
+     border-radius: 80px;
+}
+/*contatos*/
+   .contato-container{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contato .info{
+        width: 100%;
+        text-align: center;
+    }
+
+    .mapa{
+        width: 100%;
+    }
+
+    /*footer*/
+     .footer h2{
+        font-size: 22px;
+    }
+
+    .footer-social a{
+        font-size: 22px;
+    }
+
+
+
+
+
+}
