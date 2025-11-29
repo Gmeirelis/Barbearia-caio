@@ -38,7 +38,7 @@ header i{
 header h1{
    color: rgb(214, 159, 6);
     font-size: 1.8rem;
-    font-weight: 700;
+    font-weight: 300;
     text-shadow: 0px 1px 3px rgb(0,0,0,0.2);
     border-bottom: 1px solid rgb(0,0,0,0.1);
 }
@@ -171,6 +171,7 @@ to{
     width: fit-content;
     transform: translateY(20px);
    animation: showUp 1.4s ease-out forwards;
+   font-size: 20px;
 }
 
 .sobre p{
@@ -197,6 +198,8 @@ to{
     font-family: "Anton", sans-serif;
     transform: translateY(20px);
    animation: showUp 1.4s ease-out forwards;
+   font-weight: 200px;
+   font-size: 20px;
 }
 
 .block{
@@ -216,8 +219,8 @@ to{
 }
 
 .servicos img{
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 70px;
     border-radius: 10px;
     object-fit: cover;
     border: 1px solid black;
@@ -235,6 +238,7 @@ to{
     width: fit-content;
     margin: 0 auto 30px;
     font-family: "Anton", sans-serif;
+    font-size: 20px;
 }
 
 .container-cortes{
@@ -266,6 +270,9 @@ to{
     width: 300px;
     height: 300px;
 }
+.container-cortes h2{
+font-size: 20px;
+}
 
 
 
@@ -282,6 +289,7 @@ to{
     width: fit-content;
     margin: 0 auto 30px;
     font-family: "Anton", sans-serif;
+    font-size: 20px;
 }
 .barbeiro p{
     color: rgb(30, 30, 30);
@@ -320,6 +328,7 @@ to{
     width: fit-content;
     margin: 0 auto 30px;
     font-family: "Anton", sans-serif;
+    font-size: 29px;
 }
 
 .contato-container{
@@ -423,11 +432,23 @@ to{
 
 
 
+iframe{
+    margin-left: 50px;
+}
 
 
-
-
-
+.video h1{
+    font-size: 20px;
+    margin-left: 10px;
+    padding: 0px 0px 30px;
+     color: rgb(214, 159, 6);
+    font-family: "Anton", sans-serif;
+    margin-bottom: 15px;
+    width: fit-content;
+    transform: translateY(20px);
+   animation: showUp 1.4s ease-out forwards;
+  
+}
 
 
 
