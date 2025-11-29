@@ -537,7 +537,10 @@ iframe{
         font-size: 22px;
     }
 
-
+    /* video */
+    iframe{
+    margin-left: 50px;
+}
 
 
 
